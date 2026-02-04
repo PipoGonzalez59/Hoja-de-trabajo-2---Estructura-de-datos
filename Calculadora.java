@@ -1,11 +1,33 @@
+/**
+ * Calculadora que resuelve expresiones en notacion postfix
+ */
 public class Calculadora implements Calc {
     
     private Stack<Integer> pila; //pila para guardar los operandos
 
-    //se recibe la pila que se va a usar
+/**
+ * Constructor de la calculadora.
+ *
+ * @param pila Pila que se usará para hacer los cálculos.
+ */
     public Calculadora(Stack<Integer> pila) {
         this.pila = pila;
     }
+
+/**
+ * Evalúa una expresión en notación postfix y devuelve el resultado.
+ *
+ * Precondición:
+ * - La expresión debe estar escrita en notación postfix.
+ * - Los números y operadores deben estar separados por espacios.
+ *
+ * Postcondición:
+ * - Se devuelve el resultado de la expresión.
+ * - La pila queda vacía al terminar el cálculo.
+ *
+ * @param input Expresión postfix que se quiere evaluar.
+ * @return Resultado de la expresión.
+ */
 
     public int Operate(String input) {
 
